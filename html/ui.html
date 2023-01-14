@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./reset.css">
+</head>
+    <body>
+        <div class="container">
+            <div class="scoreboard-block">
+                <div class="scoreboard-num-box">
+                    <div class="scoreboard-num-littlebox ftp-police"   style="background-image: url('./img/polmav.png'); margin-left: -4vh;"><span>00</span></div>
+                    <div class="scoreboard-num-littlebox ftp-ambu"     style="background-image: url('./img/ambu.png');"><span>00</span></div>
+                    <div class="scoreboard-num-littlebox ftp-mech"     style="background-image: url('./img/meca.png');"><span>00</span></div>
+                </div>
+
+                <div class="scoreboard-info" style="transform: scale(0.9);">
+                    <div class="bloque" style="border: .15vh solid #dc143c; border-radius: .3vh;">
+                        <div class="scoreboard-info-beam" data-type="policia" style="background: #0000008e;  border-top-left-radius: .3vh; border-top-right-radius: .3vh;">
+                            <div class="info-beam-title"><p>Policía</p></div>
+                            <div class="info-beam-status"></div>
+                        </div>
+                        <div class="scoreboard-info-beam" data-type="sanitarios" style="background: #0000008e;  ">
+                            <div class="info-beam-title"><p>Sanitarios</p></div>
+                            <div class="info-beam-status stat-ems"></div>
+                        </div>
+                        <div class="scoreboard-info-beam" data-type="mecanico" style="background: #0000008e;   border-bottom-left-radius: .3vh; border-bottom-right-radius: .3vh;">
+                            <div class="info-beam-title"><p>Mecánicos</p></div>
+                            <div class="info-beam-status stat-meca"></div>
+                        </div>
+                    </div>
+                    <!-- Disponibilidad Robos -->
+                    <br><br><br>
+                    <div class="bloque" style="border: .15vh solid #dc143c; border-radius: .3vh;">
+                        <div class="scoreboard-info-beam" data-type="badus" style="background: #0000008e;   border-top-left-radius: .3vh; border-top-right-radius: .3vh;">
+                            <div class="info-beam-title"><p>Robo a tienda</p></div>
+                            <div class="info-beam-status"></div>
+                        </div>
+                        <div class="scoreboard-info-beam" data-type="joyeria" style="background: #0000008e;  ">
+                            <div class="info-beam-title"><p>Joyería</p></div>
+                            <div class="info-beam-status"></div>
+                        </div>
+                        <div class="scoreboard-info-beam" data-type="humane" style="background: #0000008e;  ">
+                            <div class="info-beam-title"><p>Humane Labs</p></div>
+                            <div class="info-beam-status"></div>
+                        </div>
+                        <div class="scoreboard-info-beam" data-type="bancos" style="background: #0000008e;    border-bottom-left-radius: .3vh; border-bottom-right-radius: .3vh;">
+                            <div class="info-beam-title"><p>Robo a banco</p></div>
+                            <div class="info-beam-status"></div>
+                        </div>
+                    </div>
+                    <br><br><br>
+                    <!-- Disponibilidad Robos -->
+                    <div class="scoreboard-info-beam" style="background: #0000008e; border: .15vh solid #dc143c; border-radius: .3vh;">
+                        <div class="info-beam-title"><p>Jugadores en línea:</p></div>
+                        <div class="info-beam-status" id="total-players" style="transform: scale(1.1);" ></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="./app.js"></script>
+    </body>
+</html>

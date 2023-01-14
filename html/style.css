@@ -1,0 +1,152 @@
+@font-face {
+    font-family: 'fuente';
+    src: url(./fuente.ttf);
+}
+
+*{
+    image-rendering: -webkit-optimize-contrast !important;
+}
+
+.container {
+    height: 100vh;
+    font-family: 'fuente', sans-serif !important;
+}
+
+.scoreboard-block {
+    display: none;
+    position: absolute;
+    height: fit-content;
+    width: 40vh;
+    background: rgba(0,0,0,.9);
+    right: 5vw;
+    height: 60%;
+
+    margin: auto 0;
+    bottom: 0;
+    top: 0;
+
+    border-radius: .5vh;
+}
+
+.scoreboard-info {
+    position: absolute;
+    height: 30vh;
+    width: 36vh;
+    top: 12vh;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+}
+
+.scoreboard-info-header {
+    position: relative;
+    height: 2vh;
+}
+
+#info-tab-label {
+    position: absolute;
+    font-family: 'fuente';
+    left: 1vh;
+    font-weight: bold;
+    opacity: 80%;
+}
+
+.info-beam-title {
+    position: absolute;
+    font-family: 'fuente';
+    font-size: 1.4vh;
+    font-weight: lighter;
+    letter-spacing: 0.1vh;
+    left: 1vh;
+    line-height: 4.8vh;
+    color: white;
+    padding-left: .55vw;
+}
+
+#status-tab-label {
+    position: absolute;
+    font-family: 'fuente';
+    right: 3vh;
+    font-weight: bold;
+}
+
+.info-beam-status {
+    position: absolute;
+    font-family: 'fuente';
+    right: 3vh;
+    line-height: 4.8vh;
+    float: left;
+    text-align: left;
+}
+
+.scoreboard-info-beam {
+    position: relative;
+    height: 5vh;
+    width: 100%;
+}
+
+.fa-times {
+    color: rgb(255, 255, 255);
+    padding: .6vh;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 50%;
+    width: 1vh;
+    height: 1vh;
+    text-align: center !important;
+}
+
+.fa-check {
+    color: rgb(255, 255, 255);
+    padding: .6vh;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 50%;
+    width: 1vh;
+    height: 1vh;
+    text-align: center !important;
+}
+
+#total-players {
+    color: white;
+    font-weight: bold;
+}
+
+.scoreboard-num-box {
+    width: 100%;
+    height: 8vh;
+    position: absolute;
+    top: 3vh;
+    left: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.scoreboard-num-littlebox {
+    width: 6vh;
+    height: 8vh;
+    margin-left: .4vh !important;
+    margin-right: .4vh !important;
+    /* background-color: rgba(0,0,0,.8); */
+    border-radius: .3vh;
+    border: .15vh solid #dc143c;
+
+    background-color: #ffffff0b;
+    transform: scale(0.8);
+
+    background-image: url("https://i.imgur.com/Ejl72Gt.png");
+    background-position: center 1.5vh;
+    background-repeat: no-repeat;
+    background-size: 2vh 2vh;
+}
+
+.scoreboard-num-littlebox span {
+    position: absolute;
+    /* font-weight: bold; */
+    color: white;
+    padding-top: 5vh;
+    font-size: 1.5vh;
+
+    left: 50%;
+    transform: translate(-50%, 0);
+}
