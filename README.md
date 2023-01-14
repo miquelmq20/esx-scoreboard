@@ -1,4 +1,4 @@
-<div align='center'><h3><a>QBCore Inventory Redesigned by !miquelmq20</a></h3></div>
+<div align='center'><h3><a>ESX Scoreboard by !miquelmq20</a></h3></div>
 <br>
 <div align='center'><img style="width: 30em;" src='https://user-images.githubusercontent.com/43810248/212482372-768d3b71-fe2d-4af5-b4d0-a98803b3e1d7.png'/></div>
 <br>
